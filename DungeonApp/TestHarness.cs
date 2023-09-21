@@ -13,10 +13,20 @@ namespace DungeonApp
         static void Main(string[] args)
         {
             Character c1 = new Character();
-            //now that we have a volunteer, we can access the properties to store info in the fields using the "set"
-            c1.Name = "Spider-Man";
-            v1.YearsOfService = 12;
-            v1.IsActive = true;
+            //now that we have a character, we can access the properties to store info in the fields using the "set"
+            c1.Name = "Lee";
+            c1.HitChance = 90;
+            c1.Block = 100;
+            c1.MaxLife = 200;
+            c1.Life = 200;
+
+            //now let's do the weaponry
+            Weapon w1 = new Weapon("Nunchaku", 50,150,70,true);
+            //w1.Name = "Nunchaku";
+            //w1.MinDamage = 50;
+            //w1.MaxDamage = 150;
+            //w1.BonusHitChance = 70;
+            //w1.IsTwoHanded = true;
         }
     }
 }       

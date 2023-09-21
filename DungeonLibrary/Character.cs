@@ -35,7 +35,54 @@
         public int Life
         {
             get { return _life; }
-            set { _life = value; }
+            set 
+            {
+                if (value <= MaxLife)
+                {
+                    _life = value;
+                }
+                else
+                {
+                    _life = MaxLife;
+                }
+            }
+        }//end Life
+
+        //CTOR
+        public Character()
+        {
+            //default CTOR
+        }
+
+        public Character(string name, int hitChance, int block, int maxLife)
+        {
+            MaxLife = maxLife;
+            Life = MaxLife;//start off with full HP
+            Block = block;
+            HitChance = hitChance;
+            Name = name;
+        }
+
+        public override string ToString()
+        {
+            //return base.ToString();
+            return $"----- {Name} -----\n" +
+                   $"Life: {Life} of {MaxLife}\n" +
+                   $"Hit Chance: {HitChance}%\n" +
+                   $"Block {Block}%";
+        }
+
+        public int CalcBlock()
+        {
+            return Block;
+        }
+        public int CalcHitChance()
+        {
+            return HitChance;
+        }
+        public int CalcDamage()
+        {
+            return 0;
         }
     }
 }
