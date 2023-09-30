@@ -69,18 +69,18 @@
             return $"----- {Name} -----\n" +
                    $"Life: {Life} of {MaxLife}\n" +
                    $"Hit Chance: {HitChance}%\n" +
-                   $"Block {Block}%";
+                   $"Block {Block}%\n\n";
         }
 
-        public int CalcBlock()
+        public virtual int CalcBlock()
         {
             return Block;
         }
-        public int CalcHitChance()
+        public virtual int CalcHitChance()
         {
             return HitChance;
         }
-        public int CalcDamage()
+        public virtual int CalcDamage()
         {
             return 0;
         }

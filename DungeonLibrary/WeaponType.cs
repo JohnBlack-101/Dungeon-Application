@@ -10,10 +10,8 @@ namespace DungeonLibrary
     {
         //Five types of weapons that you can use
         Nunchaku = 1,
-        Bo_Staff,
-        Katana,
-        Kali_Sticks,
-        Knives,
+        Chain,
+        Knives
     }
 }   
 

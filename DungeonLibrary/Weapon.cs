@@ -65,6 +65,10 @@ namespace DungeonLibrary
             get { return _type; }
             set { _type = value; }
         }
+        public Weapon()
+        {
+
+        }
         public Weapon(string name, int minDamage, int maxDamage, int bonusHitChance, bool isTwoHanded, WeaponType type)
         {
             //ANY props that have business rules that depaend o OTHER properties
@@ -88,7 +92,8 @@ namespace DungeonLibrary
             return $"{Name}\n" +
                    $"Damage: {MinDamage} to {MaxDamage}\n" +
                    $"Bonus Hit: {BonusHitChance}%\n" +
-                   $"{(IsTwoHanded ? "Two-" : "One-")}Handed";//update with Type
+                   $"{(IsTwoHanded ? "Two-" : "One-")}Handed";
+                   //$" "//update with Type
         }
     }
 }

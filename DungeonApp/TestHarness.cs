@@ -15,13 +15,13 @@ namespace DungeonApp
             Character c1 = new Character();
             //now that we have a character, we can access the properties to store info in the fields using the "set"
             c1.Name = "Lee";
-            c1.HitChance = 90;
+            c1.HitChance = 60;
             c1.Block = 100;
-            c1.MaxLife = 200;
-            c1.Life = 200;
+            c1.MaxLife = 100;
+            c1.Life = 100;
 
             //now let's do the weaponry
-            Weapon w1 = new Weapon("Nunchaku", 50,150,70,true);
+            //Weapon w1 = new Weapon("Nunchaku", 50,150,70,true);
             //w1.Name = "Nunchaku";
             //w1.MinDamage = 50;
             //w1.MaxDamage = 150;

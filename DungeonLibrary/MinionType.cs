@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DungeonLibrary
 {
-    public enum PlayerType
+    public enum MinionType
     {
         //Five types of players that you can run into
         Thug = 1,
         Brawler,
         Ninja,
         Swordsman,
-        The_Master,
+        Kung_Fu_Master,
     }
 }
